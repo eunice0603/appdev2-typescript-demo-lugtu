@@ -48,6 +48,9 @@ In JavaScript, we can check the type of a variable using the `typeof` operator. 
 ## 03-flexible-types.ts
 Illustrates the `any` type, allowing reassignment to different types and showing its flexibility (and risks).
 
+Summary:
+The `any` type in TypeScript allows a variable to hold any type of value, providing flexibility. In the example, we can assign a number to `age`, then reassign it to a string, a boolean, an object, and an array without any type errors.
+
 ## 04-arrays-objects.ts
 Covers arrays with union types, object typing with nested properties, and the `Record` type for flexible objects.
 
