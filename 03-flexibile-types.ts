@@ -1,10 +1,10 @@
-let age: any = 31
+let age: any = 20
 
 // ...
 
-age = '31'
+age = '20'
 age = true
-age = {}
-age = []
+age = {apple: 5, orange: 3, banana: 8}
+age = [1, 2, 3, 4, 5]
 
 console.log(typeof age)

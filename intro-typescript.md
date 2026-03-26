@@ -42,6 +42,9 @@ It shows the basics of types. It is important that when you assign a type to a v
 ## 02-vanilla-js-types.js
 Shows how JavaScript’s `typeof` operator works to check variable types at runtime.
 
+Summary:
+In JavaScript, we can check the type of a variable using the `typeof` operator. This is useful for debugging and ensuring that variables hold the expected types during runtime. In my experimentation, it had identified a string, a boolean, and a number.
+
 ## 03-flexible-types.ts
 Illustrates the `any` type, allowing reassignment to different types and showing its flexibility (and risks).
 
