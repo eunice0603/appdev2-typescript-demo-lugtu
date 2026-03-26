@@ -2,13 +2,15 @@
     enum Role {
         // SuperAdmin,
         // SuperAdmin = 1,
-        SuperAdmin = 'SuperAdmin',
+        SuperAdmin = 'Me',
         // Teacher,
-        Teacher = 'Teacher',
+        Teacher = 'Ako',
         // Student,
-        Student = 'Student',
+        Student = 'Eunice',
     }
 
     // let userRole: Role = 0;
-    let userRole: Role = Role.SuperAdmin;
-})
+    let userRole: Role = Role.Teacher;
+
+    console.log(userRole)
+})()

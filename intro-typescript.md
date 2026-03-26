@@ -54,5 +54,8 @@ The `any` type in TypeScript allows a variable to hold any type of value, provid
 ## 04-arrays-objects.ts
 Covers arrays with union types, object typing with nested properties, and the `Record` type for flexible objects.
 
+Summary:
+This demonstrates how to define arrays that can hold multiple types using union types, how to create objects with specific property types, and how to use the `Record` type for flexible key-value pairs. This highlights the importance of defining types to enhance code maintainability.
+
 ## 05-enum.ts
 Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
