@@ -36,6 +36,9 @@ tsc filename.ts
 ## 01-basics.ts
 Demonstrates **type inference**, **explicit typing**, and what happens when assigning mismatched types.
 
+Summary:
+It shows the basics of types. It is important that when you assign a type to a variable, you will be consistent when substituting the variable with a value. If it is a string, it should remain a string. If it is an integer, it should remain an integer. We should be mindful of assigning types to ensure the smooth flow of our codebase and logic.
+
 ## 02-vanilla-js-types.js
 Shows how JavaScript’s `typeof` operator works to check variable types at runtime.
 
