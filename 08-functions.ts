@@ -5,8 +5,10 @@
         return a + b
     }
 
-    add(5, 10)
+    // add(5, 10)
     // add("5", 10)
+
+    log(add("5", 10))
 
     // Special Type `void` - return nothing
     // Function doesn't return a meaningful value, but it does finish
@@ -23,14 +25,15 @@
         throw new Error(errorMessage)
     }
 
+    // log(logAndThrow("Something went wrong!"))
+
     // Function as Types
     // Useful for callback functions
     // () => {} is not same as () => void
     // () => {} - arrow function
     // () => void - function type
     function performJob(cb: (m: string) => void) {  // you can also use cb: Function but () => void is the best practice
-        // ...
-        cb('Job Done!')
+        cb("Job done!")
     }
 
     let logMsg = (msg: string): void => {
@@ -47,16 +50,16 @@
     }
 
     let user: User = {
-        name: "Elmer",
-        age: 39,
-        // greet: function() {
-        //     return this.name
-        // }
-        greet() {
-            console.log(`Hello, ${this.name}`)
+        name: "Eunice",
+        age: 20,
+        greet: function() {
             return this.name
         }
+        // greet() {
+        //     console.log(`Hello, ${this.name}`)
+        //     return this.name
+        // }
     }
 
     user.greet()
-})
+})()
