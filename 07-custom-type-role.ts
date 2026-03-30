@@ -11,11 +11,28 @@
         permission: string[];
     }
 
-    let userRole: Role = 'admin'
+    let userRole: Role = 'student'
 
-    // ...
+    let user: User = {
+        name: "Eunice",
+        age: 20,
+        role: userRole,
+        permission: ["read", "write"]
+    }
 
     function access(role: Role) {
-        // ...
+        if (role === 'admin') {
+            console.log('full access')
+        } else if (role === 'teacher') {
+            console.log('could edit content')
+        } else if (role === 'student') {
+            console.log('could view content')
+        } else {
+            console.log('no access')
+        }
     }
-})
+
+    console.log(userRole)
+    console.log(user)
+    access(userRole)
+})()
