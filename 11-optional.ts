@@ -1,10 +1,10 @@
 // Optional Values in parameter
-function generateError(msg?: string) {
-    throw new Error(msg)
-}
+// function generateError(msg?: string) {
+//     throw new Error(msg)
+// }
 
-generateError("An error occured") // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
-// generateError()
+// generateError("An error occured"); // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
+// // generateError()
 
 
 (() => {
@@ -12,21 +12,23 @@ generateError("An error occured") // Automatic Semicolon Insertion pitfall - add
     type User = {
         name: string;
         age: number;
-        role?: 'admin' | 'guess'
+        role?: 'admin' | 'guest'
     }
 
     let user: User = {
-        name: 'Elmer',
-        age: 31
+        name: 'Eunice'
     }
 
     user.name
     user.age
-})
+
+    console.log(user)
+})()
 
 // Nullish Coalescing `??` operator 
-let input = ''
+let input = 0
 const didProvideInput = input ?? false;
+console.log(didProvideInput)
 
 // try it on browser console log to see results
 // update it `??` to `||`
