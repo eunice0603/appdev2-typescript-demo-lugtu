@@ -59,3 +59,24 @@ This demonstrates how to define arrays that can hold multiple types using union 
 
 ## 05-enum.ts
 Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
+
+Summary:
+It showed how to define an enum to group a set of named values together, and how to use it as a type for variables. We give the values a name in this one instead of just putting numbers or plain strings.
+
+## 06-alternative-to-enum.ts
+Literal types can be used as an alternative to enums by directly listing the allowed values using a union type. Instead of defining a separate enum, the valid options are written inline, making it simpler.
+
+## 07-custom-type-role.ts
+Type aliases can create a reusable custom type and compose them together into a more complex object type. Instead of repeating the union type everywhere, the Role type is defined once and reused across the variable, the object property, and the function parameter.
+
+## 08-functions.ts
+It showed how to define typed functions with explicit return types, and how TypeScript uses special types like void for functions that return nothing and never for functions that never finish normally.
+
+## 09-special-types.ts
+Null and undefined can be used as explicit types in TypeScript. We can combine them with other types using union types to alow a variale to hold either a value or no value at all.
+
+## 10-form.html and 10-type-narrowing.ts
+This demonstrates how to interact with DOM elements in TypeScript, and how TypeScript handles the possibility of an element not being found by typing getElementById as HTMLElement | null.
+
+## 11-optional.ts
+This shows how to define optional properties in TypeScript using the `?` syntax. Optional properties allow us to create more flexible types that can represent objects with missing properties without causing type errors.
